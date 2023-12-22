@@ -15,7 +15,7 @@ const BottomTabNavigator = () => {
                     let iconName;
                     if (route.name === "Feed") {
                         iconName = focused ? "home" : "home-outline";
-                    } else if (route.name === "Create Story") {
+                    } else if (route.name === "Create Post") {
                         iconName = focused ? "add-circle" : "add-circle-outline";
                     }
                     return (
