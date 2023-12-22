@@ -5,14 +5,11 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import { RFValue } from "react-native-responsive-fontsize";
 
 import Feed from "../screens/Feed";
-import CreateStory from "../screens/CreateStory";
-const Tab = createMaterialBottomTabNavigator();
+import CreatePost from "../screens/CreatePost";
 
 const BottomTabNavigator = () => {
     return (
         <Tab.Navigator
-            labeled={false}
-            barStyle={styles.bottomTabStyle}
             screenOptions={({ route }) => ({
                 tabBarIcon: ({ focused, color, size }) => {
                     let iconName;
@@ -35,7 +32,7 @@ const BottomTabNavigator = () => {
             inactiveColor={"gray"}
         >
             <Tab.Screen name="Feed" component={Feed} options={{headerShown:false}}/>
-            <Tab.Screen name="Create Story" component={CreateStory} options={{headerShown:false}}/>
+            <Tab.Screen name="Create Post" component={CreatePost} options={{headerShown:false}}/>
         </Tab.Navigator>
     );
 };
